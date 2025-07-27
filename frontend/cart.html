@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - FastAPI Bistro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">FastAPI Bistro</a>
+        <div class="nav-links">
+            <a href="index.html"><i class="fa-solid fa-utensils"></i> Menu</a>
+            <a href="cart.html" class="active"><i class="fa-solid fa-cart-shopping"></i> Cart <span class="cart-count" id="cart-count-badge">0</span></a>
+            <a href="my_orders.html"><i class="fa-solid fa-box"></i> My Orders</a>
+            <a href="history.html"><i class="fa-solid fa-clock-rotate-left"></i> History</a>
+        </div>
+    </nav>
+    <div class="container">
+        <header><h1>Your Cart</h1></header>
+        <div class="cart">
+            <div id="cart-items-container">
+                <p>Loading cart...</p>
+            </div>
+            <div class="cart-total">
+                <strong>Total: ₹<span id="cart-total">0.00</span></strong>
+            </div>
+            <div class="cart-actions">
+                <a href="index.html" class="btn btn-secondary">Add More Items</a>
+                <button class="btn" id="place-order-btn">Place Order</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

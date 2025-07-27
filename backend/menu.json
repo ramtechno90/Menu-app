@@ -1,0 +1,68 @@
+{
+    "categories": [
+        {
+            "name": "Starters",
+            "items": [
+                {
+                    "id": 1,
+                    "name": "Gobi 65",
+                    "description": "Spicy, deep-fried cauliflower florets.",
+                    "price": 180,
+                    "in_stock": true
+                },
+                {
+                    "id": 2,
+                    "name": "Paneer Tikka",
+                    "description": "Marinated paneer cubes grilled to perfection.",
+                    "price": 220,
+                    "in_stock": true
+                }
+            ]
+        },
+        {
+            "name": "Main Course",
+            "items": [
+                {
+                    "id": 3,
+                    "name": "Paneer Butter Masala",
+                    "description": "A rich and creamy dish of paneer in a tomato-butter sauce.",
+                    "price": 280,
+                    "in_stock": true
+                },
+                {
+                    "id": 4,
+                    "name": "Butter Naan",
+                    "description": "Soft, fluffy flatbread brushed with butter.",
+                    "price": 60,
+                    "in_stock": true
+                },
+                {
+                    "id": 1753434999458,
+                    "name": "Garlic naan",
+                    "description": "Newly added item.",
+                    "price": 70,
+                    "in_stock": true
+                }
+            ]
+        },
+        {
+            "name": "Desserts",
+            "items": [
+                {
+                    "id": 1753435229649,
+                    "name": "Chocolate Lava Cake",
+                    "description": "Newly added item.",
+                    "price": 120,
+                    "in_stock": true
+                },
+                {
+                    "id": 1753435256687,
+                    "name": "Sizzling Brownie with Ice Cream",
+                    "description": "Newly added item.",
+                    "price": 240,
+                    "in_stock": true
+                }
+            ]
+        }
+    ]
+}

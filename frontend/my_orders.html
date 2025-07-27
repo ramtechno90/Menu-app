@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - FastAPI Bistro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">FastAPI Bistro</a>
+        <div class="nav-links">
+            <a href="index.html"><i class="fa-solid fa-utensils"></i> Menu</a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart <span class="cart-count" id="cart-count-badge">0</span></a>
+            <a href="my_orders.html" class="active"><i class="fa-solid fa-box"></i> My Orders</a>
+            <a href="history.html"><i class="fa-solid fa-clock-rotate-left"></i> History</a>
+        </div>
+    </nav>
+    <div class="container">
+        <header><h1>My Active Orders</h1></header>
+        
+        <div class="tab-nav">
+            <button class="tab-btn active" data-status="Pending">Pending</button>
+            <button class="tab-btn" data-status="Accepted">Accepted & Preparing</button>
+            <button class="tab-btn" data-status="Completed">Completed</button>
+        </div>
+
+        <div id="pending-orders-container" class="order-container active"><p>No pending orders.</p></div>
+        <div id="accepted-orders-container" class="order-container"><p>No accepted orders.</p></div>
+        <div id="completed-orders-container" class="order-container"><p>No completed orders.</p></div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

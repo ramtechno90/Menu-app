@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-admin">
+        <a href="admin_orders.html" class="nav-brand">Admin Panel</a>
+        <div class="nav-links">
+            <a href="admin_orders.html"><i class="fa-solid fa-inbox"></i> Orders</a>
+            <a href="admin_menu.html" class="active"><i class="fa-solid fa-book-open"></i> Menu</a>
+            <a href="admin_settings.html"><i class="fa-solid fa-gear"></i> Settings</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="admin-section">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                 <h2>Menu Management</h2>
+                 <button id="add-category-btn" class="btn btn-secondary">Add New Category</button>
+            </div>
+            <div id="menu-management-container"><p>Loading menu...</p></div>
+            <button id="save-menu-btn" class="btn" style="margin-top: 20px;">Save All Menu Changes</button>
+        </div>
+    </div>
+    <script src="js/admin.js"></script>
+</body>
+</html>

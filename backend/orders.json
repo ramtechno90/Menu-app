@@ -1,0 +1,475 @@
+{
+    "BISTRO-20CC5B": {
+        "order_id": "BISTRO-20CC5B",
+        "client_ip": "127.0.0.1",
+        "timestamp": "2025-07-25T09:50:32.664381+00:00",
+        "items": [
+            {
+                "id": 1,
+                "name": "Gobi 65",
+                "price": 180.0,
+                "quantity": 1
+            },
+            {
+                "id": 2,
+                "name": "Paneer Tikka",
+                "price": 220.0,
+                "quantity": 1
+            }
+        ],
+        "status": "Paid",
+        "total_cost": 400.0
+    },
+    "BISTRO-55369B": {
+        "order_id": "BISTRO-55369B",
+        "client_ip": "127.0.0.1",
+        "timestamp": "2025-07-25T13:15:28.054654+00:00",
+        "items": [
+            {
+                "id": 1,
+                "name": "Gobi 65",
+                "price": 180.0,
+                "quantity": 1
+            },
+            {
+                "id": 2,
+                "name": "Paneer Tikka",
+                "price": 220.0,
+                "quantity": 1
+            }
+        ],
+        "status": "Paid",
+        "total_cost": 400.0
+    },
+    "BISTRO-5E296B": {
+        "order_id": "BISTRO-5E296B",
+        "client_ip": "127.0.0.1",
+        "timestamp": "2025-07-25T13:32:46.482011+00:00",
+        "items": [
+            {
+                "id": 1,
+                "name": "Gobi 65",
+                "price": 180.0,
+                "cart_item_id": "9ac874c8645e4673b4f9161e9e4a09ec",
+                "quantity": 1,
+                "customization": "Must be extra spicy"
+            },
+            {
+                "id": 2,
+                "name": "Paneer Tikka",
+                "price": 220.0,
+                "cart_item_id": "27e3167f00a64076bdc4e37bee7a187c",
+                "quantity": 1,
+                "customization": "Must be less spicy"
+            },
+            {
+                "id": 3,
+                "name": "Paneer Butter Masala",
+                "price": 280.0,
+                "cart_item_id": "dae9e4d8dfa94ff2a72a865551886baf",
+                "quantity": 2,
+                "customization": ""
+            }
+        ],
+        "status": "Paid",
+        "total_cost": 960.0
+    },
+    "BISTRO-363632": {
+        "order_id": "BISTRO-363632",
+        "client_ip": "127.0.0.1",
+        "timestamp": "2025-07-25T13:37:26.295638+00:00",
+        "items": [
+            {
+                "id": 1,
+                "name": "Gobi 65",
+                "price": 180.0,
+                "cart_item_id": "0911f2d21a99473ba328c9b4ca85597f",
+                "quantity": 1,
+                "customization": "More spicy"
+            },
+            {
+                "id": 2,
+                "name": "Paneer Tikka",
+                "price": 220.0,
+                "cart_item_id": "620e83d0da1a4f87ad54e04d65ba70c2",
+                "quantity": 1,
+                "customization": "Less spicy"
+            },
+            {
+                "id": 1753435229649,
+                "name": "Chocolate Lava Cake",
+                "price": 120.0,
+                "cart_item_id": "4ef74930f05a45cc861fa4b33d6414d5",
+                "quantity": 2,
+                "customization": ""
+            }
+        ],
+        "status": "Paid",
+        "total_cost": 640.0
+    },
+    "BISTRO-884B85": {
+        "order_id": "BISTRO-884B85",
+        "client_ip": "127.0.0.1",
+        "timestamp": "2025-07-25T13:56:57.887711+00:00",
+        "items": [
+            {
+                "id": 1,
+                "name": "Gobi 65",
+                "price": 180.0,
+                "cart_item_id": "c29cc1289d74418fb15f985340f256bd",
+                "quantity": 1,
+                "customization": "More spicy"
+            },
+            {
+                "id": 2,
+                "name": "Paneer Tikka",
+                "price": 220.0,
+                "cart_item_id": "6e25f712f308460f9fb1fb49e3cd95fc",
+                "quantity": 1,
+                "customization": "Less oil"
+            },
+            {
+                "id": 3,
+                "name": "Paneer Butter Masala",
+                "price": 280.0,
+                "cart_item_id": "5b39e18b827d4cb2aad205d06e2db7ac",
+                "quantity": 2,
+                "customization": ""
+            }
+        ],
+        "status": "Paid",
+        "total_cost": 960.0
+    },
+    "BISTRO-D861D6": {
+        "order_id": "BISTRO-D861D6",
+        "client_ip": "127.0.0.1",
+        "timestamp": "2025-07-25T14:08:51.543890+00:00",
+        "status_update_timestamp": "2025-07-25T14:09:04.134653+00:00",
+        "items": [
+            {
+                "id": 1,
+                "name": "Gobi 65",
+                "price": 180.0,
+                "cart_item_id": "20044db992e94d24b9cfa5fff44c97a3",
+                "quantity": 1,
+                "customization": ""
+            },
+            {
+                "id": 2,
+                "name": "Paneer Tikka",
+                "price": 220.0,
+                "cart_item_id": "1efca36341584572adde7a48e104b539",
+                "quantity": 1,
+                "customization": ""
+            },
+            {
+                "id": 3,
+                "name": "Paneer Butter Masala",
+                "price": 280.0,
+                "cart_item_id": "8f54d8653f2a4494a5bd381f1dbb87a4",
+                "quantity": 1,
+                "customization": ""
+            }
+        ],
+        "status": "Paid",
+        "total_cost": 680.0
+    },
+    "BISTRO-33434B": {
+        "order_id": "BISTRO-33434B",
+        "client_ip": "127.0.0.1",
+        "timestamp": "2025-07-26T17:29:05.727909+00:00",
+        "status_update_timestamp": "2025-07-26T17:29:05.727909+00:00",
+        "items": [
+            {
+                "id": 1,
+                "name": "Gobi 65",
+                "price": 180.0,
+                "cart_item_id": "01ea0b7b5e024146926ed787f9b28460",
+                "quantity": 1,
+                "customization": ""
+            },
+            {
+                "id": 2,
+                "name": "Paneer Tikka",
+                "price": 220.0,
+                "cart_item_id": "78d0c260ff294e4396e5ad7a0455bf4a",
+                "quantity": 1,
+                "customization": ""
+            },
+            {
+                "id": 3,
+                "name": "Paneer Butter Masala",
+                "price": 280.0,
+                "cart_item_id": "92f225c913b248d6bf7aa474368fd1fc",
+                "quantity": 1,
+                "customization": ""
+            },
+            {
+                "id": 4,
+                "name": "Butter Naan",
+                "price": 60.0,
+                "cart_item_id": "d0720416c2ff47319c02b0763932d260",
+                "quantity": 1,
+                "customization": ""
+            }
+        ],
+        "status": "Pending",
+        "total_cost": 740.0
+    },
+    "BISTRO-695893": {
+        "order_id": "BISTRO-695893",
+        "client_ip": "127.0.0.1",
+        "timestamp": "2025-07-26T17:29:20.825321+00:00",
+        "status_update_timestamp": "2025-07-26T17:29:20.825321+00:00",
+        "items": [
+            {
+                "id": 1,
+                "name": "Gobi 65",
+                "price": 180.0,
+                "cart_item_id": "2c8e201dadd24a18b364e0200c169f14",
+                "quantity": 1,
+                "customization": ""
+            },
+            {
+                "id": 3,
+                "name": "Paneer Butter Masala",
+                "price": 280.0,
+                "cart_item_id": "62e9ecba5ced4560ab8dfb62bd404812",
+                "quantity": 1,
+                "customization": ""
+            }
+        ],
+        "status": "Pending",
+        "total_cost": 460.0
+    },
+    "BISTRO-D91F61": {
+        "order_id": "BISTRO-D91F61",
+        "client_ip": "127.0.0.1",
+        "timestamp": "2025-07-26T17:29:45.060052+00:00",
+        "status_update_timestamp": "2025-07-26T17:29:45.060052+00:00",
+        "items": [
+            {
+                "id": 1,
+                "name": "Gobi 65",
+                "price": 180.0,
+                "cart_item_id": "3bf876c4aaee43ab9518f3da2e434182",
+                "quantity": 2,
+                "customization": ""
+            },
+            {
+                "id": 2,
+                "name": "Paneer Tikka",
+                "price": 220.0,
+                "cart_item_id": "74e695df4bdb4ec5b7e08b8a60fafde3",
+                "quantity": 1,
+                "customization": ""
+            },
+            {
+                "id": 1753434999458,
+                "name": "Garlic naan",
+                "price": 70.0,
+                "cart_item_id": "d0b78dae33524b5189e595a176eacde6",
+                "quantity": 1,
+                "customization": ""
+            }
+        ],
+        "status": "Pending",
+        "total_cost": 650.0
+    },
+    "BISTRO-59649B": {
+        "order_id": "BISTRO-59649B",
+        "client_ip": "127.0.0.1",
+        "timestamp": "2025-07-26T17:32:12.267665+00:00",
+        "status_update_timestamp": "2025-07-26T17:52:56.388783+00:00",
+        "items": [
+            {
+                "id": 1,
+                "name": "Gobi 65",
+                "price": 180.0,
+                "cart_item_id": "17853bc9d94342f781ca9a81d13b2a76",
+                "quantity": 1,
+                "customization": ""
+            },
+            {
+                "id": 2,
+                "name": "Paneer Tikka",
+                "price": 220.0,
+                "cart_item_id": "ca7cb8a41a204c69ab19673308b5e692",
+                "quantity": 1,
+                "customization": ""
+            }
+        ],
+        "status": "Accepted",
+        "total_cost": 400.0
+    },
+    "BISTRO-DD7EF1": {
+        "order_id": "BISTRO-DD7EF1",
+        "client_ip": "127.0.0.1",
+        "timestamp": "2025-07-26T17:35:53.913626+00:00",
+        "status_update_timestamp": "2025-07-26T17:52:55.659362+00:00",
+        "items": [
+            {
+                "id": 1,
+                "name": "Gobi 65",
+                "price": 180.0,
+                "cart_item_id": "f191c18044234c48aee09ed6701f5920",
+                "quantity": 1,
+                "customization": ""
+            },
+            {
+                "id": 2,
+                "name": "Paneer Tikka",
+                "price": 220.0,
+                "cart_item_id": "cf13bdc85aee4b1c9b98784ce53469ac",
+                "quantity": 1,
+                "customization": ""
+            }
+        ],
+        "status": "Accepted",
+        "total_cost": 400.0
+    },
+    "BISTRO-68DBEB": {
+        "order_id": "BISTRO-68DBEB",
+        "client_ip": "127.0.0.1",
+        "timestamp": "2025-07-26T17:38:46.863266+00:00",
+        "status_update_timestamp": "2025-07-26T17:52:53.819796+00:00",
+        "items": [
+            {
+                "id": 1,
+                "name": "Gobi 65",
+                "price": 180.0,
+                "cart_item_id": "94a019ac5f864df7b5e3cb4c01819d8a",
+                "quantity": 1,
+                "customization": ""
+            }
+        ],
+        "status": "Accepted",
+        "total_cost": 180.0
+    },
+    "BISTRO-C63840": {
+        "order_id": "BISTRO-C63840",
+        "client_ip": "127.0.0.1",
+        "timestamp": "2025-07-26T17:52:42.246344+00:00",
+        "status_update_timestamp": "2025-07-26T18:30:39.676783+00:00",
+        "items": [
+            {
+                "id": 1,
+                "name": "Gobi 65",
+                "price": 180.0,
+                "cart_item_id": "2c93096b320c48a2a1c0be3fc841bc84",
+                "quantity": 1,
+                "customization": ""
+            }
+        ],
+        "status": "Paid",
+        "total_cost": 180.0
+    },
+    "BISTRO-AC7663": {
+        "order_id": "BISTRO-AC7663",
+        "client_ip": "127.0.0.1",
+        "timestamp": "2025-07-26T17:57:01.883767+00:00",
+        "status_update_timestamp": "2025-07-26T17:57:01.883767+00:00",
+        "items": [
+            {
+                "id": 1,
+                "name": "Gobi 65",
+                "price": 180.0,
+                "cart_item_id": "d9372b7bfc1b48ffab6d7d1321f68f6a",
+                "quantity": 1,
+                "customization": ""
+            }
+        ],
+        "status": "Pending",
+        "total_cost": 180.0
+    },
+    "BISTRO-D4B536": {
+        "order_id": "BISTRO-D4B536",
+        "client_ip": "127.0.0.1",
+        "timestamp": "2025-07-26T17:58:35.437053+00:00",
+        "status_update_timestamp": "2025-07-26T17:58:35.437053+00:00",
+        "items": [
+            {
+                "id": 1,
+                "name": "Gobi 65",
+                "price": 180.0,
+                "cart_item_id": "00a512d1164e4b56a4d405f493df7207",
+                "quantity": 1,
+                "customization": ""
+            }
+        ],
+        "status": "Pending",
+        "total_cost": 180.0
+    },
+    "BISTRO-859FCB": {
+        "order_id": "BISTRO-859FCB",
+        "client_ip": "127.0.0.1",
+        "timestamp": "2025-07-26T18:02:38.426327+00:00",
+        "status_update_timestamp": "2025-07-26T18:26:47.563696+00:00",
+        "items": [
+            {
+                "id": 1,
+                "name": "Gobi 65",
+                "price": 180.0,
+                "cart_item_id": "4a6b00db8ef04fa98718f627e121abdf",
+                "quantity": 1,
+                "customization": ""
+            }
+        ],
+        "status": "Accepted",
+        "total_cost": 180.0
+    },
+    "BISTRO-0C3F67": {
+        "order_id": "BISTRO-0C3F67",
+        "client_ip": "127.0.0.1",
+        "timestamp": "2025-07-26T18:27:49.356599+00:00",
+        "status_update_timestamp": "2025-07-26T18:28:00.753986+00:00",
+        "items": [
+            {
+                "id": 2,
+                "name": "Paneer Tikka",
+                "price": 220.0,
+                "cart_item_id": "e5962c25844b45fa843e7465fa79666b",
+                "quantity": 1,
+                "customization": ""
+            }
+        ],
+        "status": "Accepted",
+        "total_cost": 220.0
+    },
+    "BISTRO-DF8802": {
+        "order_id": "BISTRO-DF8802",
+        "client_ip": "127.0.0.1",
+        "timestamp": "2025-07-26T18:31:15.147808+00:00",
+        "status_update_timestamp": "2025-07-26T18:31:45.389534+00:00",
+        "items": [
+            {
+                "id": 1,
+                "name": "Gobi 65",
+                "price": 180.0,
+                "cart_item_id": "d5b4a64683c448b6aa551422a3b189f5",
+                "quantity": 1,
+                "customization": ""
+            }
+        ],
+        "status": "Paid",
+        "total_cost": 180.0
+    },
+    "BISTRO-AC93D3": {
+        "order_id": "BISTRO-AC93D3",
+        "client_ip": "127.0.0.1",
+        "timestamp": "2025-07-26T18:32:08.654390+00:00",
+        "status_update_timestamp": "2025-07-26T18:32:39.455093+00:00",
+        "items": [
+            {
+                "id": 1753435229649,
+                "name": "Chocolate Lava Cake",
+                "price": 120.0,
+                "cart_item_id": "1129f3862d2544668b0b44c74bc45098",
+                "quantity": 1,
+                "customization": ""
+            }
+        ],
+        "status": "Paid",
+        "total_cost": 120.0
+    }
+}
