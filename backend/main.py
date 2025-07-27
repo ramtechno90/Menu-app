@@ -2,7 +2,8 @@ import json
 import uuid
 import datetime
 import os
-from fastapi import FastAPI, HTTPException, Request
+import shutil
+from fastapi import FastAPI, HTTPException, Request, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from typing import List, Dict, Any, Optional
@@ -34,7 +35,6 @@ def startup_db_client():
         try:
             with open("menu.json", "r") as f:
                 menu_data = json.load(f)
-                # MongoDB uses `_id` for its primary key, so we don't need our own `id` in the document root
                 menu_collection.insert_one(menu_data)
         except Exception as e:
             print(f"--- Could not seed menu: {e} ---")
@@ -62,7 +62,7 @@ class ConfigModel(BaseModel):
     paid_visibility_minutes: int
 
 class MenuItemModel(BaseModel):
-    id: int # Keep `id` here as it's used by the frontend logic
+    id: int
     name: str
     price: float
 
@@ -78,6 +78,30 @@ def mongo_to_dict(item):
 
 # --- Endpoints ---
 
+@app.post("/upload-image")
+async def upload_image(file: UploadFile = File(...)):
+    save_dir = "frontend/images"
+    os.makedirs(save_dir, exist_ok=True)
+    
+    unique_id = uuid.uuid4().hex
+    try:
+        extension = file.filename.split('.')[-1] if '.' in file.filename else 'jpg'
+    except Exception:
+        extension = "jpg"
+        
+    unique_filename = f"{unique_id}.{extension}"
+    save_path = f"{save_dir}/{unique_filename}"
+    
+    try:
+        with open(save_path, "wb") as buffer:
+            shutil.copyfileobj(file.file, buffer)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Could not save the file on the server: {e}")
+    finally:
+        file.file.close()
+        
+    return {"image_url": f"images/{unique_filename}"}
+
 @app.get("/menu")
 def get_menu():
     menu = menu_collection.find_one()
@@ -87,8 +111,6 @@ def get_menu():
 
 @app.post("/update-menu")
 def update_menu(updated_menu: Dict[str, Any]):
-    # The menu is stored as a single document, so we replace it.
-    # We remove the MongoDB `_id` field if it's present in the incoming data
     updated_menu.pop("_id", None)
     menu_collection.replace_one({}, updated_menu, upsert=True)
     return {"message": "Menu updated successfully"}
@@ -208,12 +230,28 @@ def recart_order(order_id: str, request: Request):
     orders_collection.delete_one({"order_id": order_id})
     return {"message": "Order moved to cart for modification."}
 
-
-# --- Cart endpoints can remain in-memory as they are session-based ---
+# --- Cart endpoints remain in-memory ---
 
 @app.get("/cart")
 def get_cart(request: Request):
     return carts_db.get(request.client.host, [])
+
+@app.post("/cart/add")
+def add_to_cart(item: MenuItemModel, request: Request):
+    client_ip = request.client.host
+    if client_ip not in carts_db:
+        carts_db[client_ip] = []
+    cart = carts_db[client_ip]
+    existing_item = next((ci for ci in cart if ci["id"] == item.id and ci["customization"] == ""), None)
+    if existing_item:
+        existing_item["quantity"] += 1
+    else:
+        new_cart_item = item.dict()
+        new_cart_item["cart_item_id"] = uuid.uuid4().hex
+        new_cart_item["quantity"] = 1
+        new_cart_item["customization"] = ""
+        cart.append(new_cart_item)
+    return cart
 
 @app.put("/cart/item/{cart_item_id}")
 def update_cart_item(cart_item_id: str, update_data: CartItemUpdateModel, request: Request):
